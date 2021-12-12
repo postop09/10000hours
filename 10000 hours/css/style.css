@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'OTEnjoystoriesBA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+  url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+body {
+  font-family: 'GmarketSansMedium';
+  background-color: #5B2386;
+}
+.wrap {
+  width: 765px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.sr,
+.sr_link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+}
+.sr_link:focus {
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  font-size: 20px;
+  background-color: salmon;
+  color: black;
+}
+
+/* 헤더 */
+#index_header h1 {
+  margin: 194px 0 125px;
+  position: relative;
+}
+#index_header .img_title {
+  width: 564px;
+  height: 112px;
+}
+#index_header h1::before {
+  display: inline-block;
+  content: '';
+  width: 221.6px;
+  height: 225px;
+  background-image: url(../img/clock.png);
+  background-size: contain;
+  position: absolute;
+  top: -54px;
+  left: 271.7px;
+  z-index: -1;
+}
+#index_header q {
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 36px;
+  font-weight: 700;
+  color: #F5DF4D;
+}
+
+/* 메인 */
+#index_main blockquote {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 78px 0 102px;
+  position: relative;
+}
+#index_main blockquote::before {
+  display: inline-block;
+  content: '';
+  width: 493px;
+  height: 32px;
+  background-image: url(../img/quotes.png);
+  background-size: cover;
+  position: absolute;
+  top: 13px;
+  left: 136px;
+}
+#index_main blockquote strong {
+  font-size: 24px;
+}
+
+/* 섹션 1: 콘텐츠 입력 */
+#content_input {
+  font-size: 22px;
+}
+.content_goal input,
+.content_plan input {
+  border-style: none;
+  border-radius: 7px;
+  width: 228px;
+  height: 57px;
+  margin: 0 17px;
+  font-size: 24px;
+  font-family: 'GmarketSansMedium';
+  color: black;
+}
+.content_goal input {
+  padding: 18px 41px 16px 39px;
+}
+.content_plan {
+  margin-top: 27px;
+}
+.content_plan input {
+  padding: 18px 0px 16px 67px;
+}
+#content_input form a {
+  display: inline-block;
+  border-style: none;
+  border-radius: 56px;
+  width: 565px;
+  height: 66px;
+  margin: 115px 0px 147px;
+  padding: 23px 49px;
+  font-weight: bold;
+  color: #5B2386;
+  background-color: #FCEE21;
+  position: relative;
+}
+#content_input form a::after {
+  display: inline-block;
+  content: '';
+  width: 64px;
+  height: 72px;
+  background-image: url(../img/click.png);
+  background-size: contain;
+  position: absolute;
+  bottom: -21px;
+  right: -63px;
+}
+
+/* 섹션2 : 결과 표시 */
+#content_result article {
+  font-size: 24px;
+}
+#content_result article p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content_result article strong {
+  font-size: 72px;
+  font-weight: bold;
+}
+#content_result article .result_time {
+  margin-top: 17px;
+}
+#content_result .btn_result {
+  margin: 127px 0 130px;
+}
+.btn_result .btn_training,
+.btn_result .btn_sharing {
+  border-style: none;
+  border-radius: 56px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5B2386;
+}
+.btn_result .btn_training {
+  width: 356px;
+  height: 66px;
+  margin-right: 18px;
+  background-color: #FCEE21;
+}
+.btn_result .btn_sharing {
+  width: 191px;
+  height: 66px;
+  background-color: #FFFFFF;
+}
+
+/* 푸터 : 콘텐츠 정보 */
+#copyright img {
+  width: 125px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+#copyright small {
+  display: block;
+  font-size: 12px;
+  line-height: 17.38px;
+}
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  /* reset */
+  .wrap {
+    width: 360px;
+    padding-bottom: 32px;
+  }
+  /* 헤더 */
+  #index_header h1 {
+    margin: 76px 0 69px;
+  }
+  #index_header .img_title {
+    width: 267px;
+    height: 53px;
+  }
+  #index_header h1::before {
+    width: 106.13px;
+    height: 106.98px;
+    position: absolute;
+    top: -26px;
+    left: 132px;
+  }
+  #index_header q {
+    font-size: 22px;
+  }
+
+  /* 메인 */
+  #index_main blockquote {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 62px 0 66px;
+  }
+  #index_main blockquote::before {
+    width: 302px;
+    height: 19px;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+  }
+  #index_main blockquote strong {
+    font-size: 16px;
+  }
+
+  /* 섹션 1: 콘텐츠 입력 */
+  #content_input {
+    font-size: 14px;
+  }
+  .content_goal input,
+  .content_plan input {
+    width: 156px;
+    height: 37px;
+    margin: 0 4px;
+    font-size: 14px;
+  }
+  .content_goal input {
+    padding: 12px 35px 11px;
+  }
+  .content_plan {
+    margin-top: 0;
+  }
+  .br_query {
+    display: block;
+    margin: 17px 0 19px;
+  }
+  .content_plan input {
+    padding: 12px 0px 11px 51px;
+  }
+  #content_input form a {
+    border-radius: 13px;
+    width: 241px;
+    height: 66px;
+    margin: 49px 0px 64px;
+    padding: 19px 36.5px 17px;
+  }
+  #content_input form a::after {
+    width: 43px;
+    height: 48px;
+    position: absolute;
+    bottom: -13px;
+    right: -47px;
+  }
+
+  /* 섹션2 : 결과 표시 */
+  #content_result article {
+    font-size: 14px;
+  }
+  #content_result article strong {
+    font-size: 24px;
+  }
+  #content_result article .result_time {
+    margin-top: 15px;
+  }
+  #content_result .btn_result {
+    margin: 55px 0 83px;
+  }
+  .btn_result .btn_training,
+  .btn_result .btn_sharing {
+    font-size: 14px;
+  }
+  .btn_result .btn_training {
+    width: 186px;
+    height: 40px;
+    margin-right: 13px;
+  }
+  .btn_result .btn_sharing {
+    width: 92px;
+    height: 40px;
+  }
+
+  /* 푸터 : 콘텐츠 정보 */
+  #copyright img {
+    width: 91px;
+    height: 18px;
+    margin-bottom: 17px;
+  }
+  #copyright small {
+    display: block;
+    font-size: 9px;
+    line-height: 13.38px;
+  }
+}
