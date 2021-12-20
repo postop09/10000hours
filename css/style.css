@@ -164,6 +164,9 @@ body {
 }
 
 /* 섹션2 : 결과 표시 */
+#content_result {
+  display: none;
+}
 #content_result article {
   font-size: 24px;
 }
@@ -195,11 +198,13 @@ body {
   height: 66px;
   margin-right: 18px;
   background-color: #FCEE21;
+  cursor: pointer;
 }
 .btn_result .btn_sharing {
   width: 191px;
   height: 66px;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 /* 푸터 : 콘텐츠 정보 */
