@@ -354,6 +354,32 @@ body {
     bottom: -13px;
     right: -47px;
   }
+  /* 응원 모달창 */
+  #content_modal {
+    height: 120%;
+  }
+  .content_modal .wrap_modal{
+    top: 60%;
+    width: 250px;
+    height: 300px;
+    padding: 30px;
+  }
+  .content_modal .wrap_modal img {
+    width: 150px;
+  }
+  .content_modal .wrap_modal strong {
+    font-size: 30px;
+  }
+  .content_modal .wrap_modal p {
+    font-size: 24px;
+  }
+  .content_modal .wrap_modal .btn_modal {
+    width: 200px;
+    height: 40px;
+    margin: 5px 0 0;
+    padding: 0 10px;
+    font-size: 18px;
+  }
 
   /* 섹션2 : 결과 표시 */
   #content_result article {
