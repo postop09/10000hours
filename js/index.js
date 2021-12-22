@@ -1,8 +1,9 @@
+const input = document.querySelector('#content_input');
+const modal = document.querySelector('#content_modal');
+const result = document.querySelector('#content_result');
 function calc() {
-  const input = document.querySelector('#content_input');
   const goal = input.querySelector('.input_goal');
   const time = input.querySelector('.input_time');
-  const result = document.querySelector('#content_result');
   const resultGoal = result.querySelector('.output_goal');
   const resultTime = result.querySelector('.output_time');
 
@@ -24,7 +25,13 @@ function calc() {
   resultTime.innerHTML = calcTime; // 계산한 값을 넣어줘야 한다.
 
   result.style.display = 'block';
+  modal.style.display = 'block';
 }
 
-const startBtn = document.querySelector('.btn_calc');
-startBtn.addEventListener('click', calc);
+const btnStart = document.querySelector('.btn_calc');
+btnStart.addEventListener('click', calc);
+
+const btnClose = document.querySelector('.btn_modal');
+btnClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+})
